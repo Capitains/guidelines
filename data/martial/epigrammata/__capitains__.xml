@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection
+    xmlns="http://purl.org/ns/capitains"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cts="http://chs.harvard.edu/xmlns/cts">
+    <identifier>urn:cts:latinLit:phi1294.phi002</identifier>
+    <parent>urn:cts:latinLit:phi1294</parent>
+    <dc:name xml:lang="eng">Epigrammata</dc:name>
+    <dc:language>lat</dc:language>
+    <dc:description xml:lang="eng">Collections of poems named Epigrammata written by Martial</dc:description>
+    <owl:isA>cts:work</owl:isA>
+    <owl:isA>http://dbpedia.org/ontology/Book</owl:isA>
+    <!-- And any other properties from there. The more the merrier -->
+    <members>
+        <collection
+            local="./phi1294.phi002.perseus-lat2.xml"
+            identifier="urn:cts:latinLit:phi1294.phi002"
+            readable="True"
+            >
+            <parent>urn:cts:latinLit:phi1294.phi002</parent>
+            <identifier>urn:cts:latinLit:phi1294.phi002.perseus-lat2</identifier>
+            <dc:name xml:lang="eng">Epigrammata</dc:name>
+            <dc:description xml:lang="eng">Edition by Perseus</dc:description>
+            <dc:language>lat</dc:language>
+            <owl:isA>cts:edition</owl:isA>
+            <owl:isA>http://dbpedia.org/ontology/Book</owl:isA>
+        </collection>
+        <!-- Add a possibility for remote ? -->
+    </members>
+</collection>

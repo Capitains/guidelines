@@ -1,0 +1,16 @@
+<collection
+    xmlns="http://purl.org/ns/capitains"
+    xmlns:owl="http://www.w3.org/2002/07/owl#" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cts="http://chs.harvard.edu/xmlns/cts">
+    <identifier>urn:cts:latinLit:phi1294</identifier>
+    <dc:name xml:lang="eng">Martial</dc:name>
+    <dc:description xml:lang="eng">Latin Author</dc:description>
+    <owl:isA>cts:textgroup</owl:isA>
+    <owl:isA>http://dbpedia.org/ontology/Person</owl:isA>
+    <!-- And any other properties from there. The more the merrier -->
+    <members>
+       <collection local="./epigrammata/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi002" />
+       <collection local="./de_spectaculis/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi001" />
+    </members>
+</collection>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<grammar xmlns:doc="http://relaxng.org/ns/compatibility/annotations/1.0"
+  ns="http://purl.org/ns/capitains" xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns="http://relaxng.org/ns/structure/1.0"
+  datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <ref name="collection"/>
+  </start>
+  <define name="collection">
+    <element name="collection">
+      <choice>
+        <group>
+          <doc:documentation xml:lang="eng">This group is required for completely described
+            collections, for example root collection of the document</doc:documentation>
+          <interleave>
+            <element name="identifier">
+              <doc:documentation xml:lang="eng">Identifier of the collection if required in an API
+                (CTS URN, HTTP Address, DOI, ARK, etc.)</doc:documentation>
+              <data type="NMTOKEN"/>
+            </element>
+            <oneOrMore>
+              <element name="dc:name">
+                <doc:documentation xml:lang="eng">Name of the collection (Author name, work title,
+                  corpus name, etc.)</doc:documentation>
+                <ref name="lang"/>
+                <data type="string"/>
+              </element>
+            </oneOrMore>
+            <oneOrMore>
+              <element name="owl:isA">
+                <doc:documentation xml:lang="eng">Type of the resource. Identify the type of concept
+                  this collection embodies</doc:documentation>
+                <data type="anyURI"/>
+              </element>
+            </oneOrMore>
+            <optional>
+              <element name="parent">
+                <doc:documentation xml:lang="eng">Identifier of the parent if required by a parent
+                  collection</doc:documentation>
+                <data type="NMTOKEN"/>
+              </element>
+            </optional>
+            <optional>
+              <doc:documentation xml:lang="eng">If a text is readable, we need some necessary
+                informations</doc:documentation>
+              <group>
+                <ref name="readable"/>
+                <element name="dc:language">
+                  <doc:documentation xml:lang="eng">Language in which the document is
+                    written</doc:documentation>
+                  <data type="language"/>
+                </element>
+              </group>
+            </optional>
+            <zeroOrMore>
+              <choice>
+                <element name="dc:description">
+                  <doc:documentation xml:lang="eng">Description of the
+                    collection</doc:documentation>
+                  <ref name="lang"/>
+                  <text/>
+                </element>
+                <element name="members">
+                  <ref name="collection"/>
+                </element>
+              </choice>
+            </zeroOrMore>
+          </interleave>
+        </group>
+        <group>
+          <attribute name="identifier">
+            <doc:documentation xml:lang="eng">Identifier of the collection if required in an API
+              (CTS URN, HTTP Address, DOI, ARK, etc.)</doc:documentation>
+            <data type="NMTOKEN"/>
+          </attribute>
+          <optional>
+            <attribute name="local">
+              <doc:documentation xml:lang="eng">Relative address pointing to the metadata or the
+                text containing xml file</doc:documentation>
+              <data type="string"/>
+            </attribute>
+          </optional>
+          <empty/>
+        </group>
+      </choice>
+    </element>
+  </define>
+  <define name="lang">
+    <attribute>
+      <doc:documentation xml:lang="eng">Language in which the current node is
+        expressed</doc:documentation>
+      <name ns="http://www.w3.org/XML/1998/namespace">lang</name>
+      <data type="language"/>
+    </attribute>
+  </define>
+  <define name="readable">
+    <attribute name="readable">
+      <documentation xmlns="http://relaxng.org/ns/compatibility/annotations/1.0"> When set to true,
+        this means that the document linked will be readable through CapiTainS Readers </documentation>
+      <data type="boolean"/>
+    </attribute>
+  </define>
+</grammar>

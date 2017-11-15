@@ -1,3 +1,4 @@
+<?xml-model href="../../capitains.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <collection
     xmlns="http://purl.org/ns/capitains"
     xmlns:owl="http://www.w3.org/2002/07/owl#" 
@@ -10,7 +11,7 @@
     <owl:isA>http://dbpedia.org/ontology/Person</owl:isA>
     <!-- And any other properties from there. The more the merrier -->
     <members>
-       <collection local="./epigrammata/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi002" />
-       <collection local="./de_spectaculis/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi001" />
+       <collection local="./epigrammata/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi002"></collection>
+       <collection local="./de_spectaculis/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi001"></collection>
     </members>
 </collection>

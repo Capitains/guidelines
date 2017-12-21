@@ -10,20 +10,20 @@ Capitains Guidelines Draft 2.3
 We are reducing the amount of nodes that are used by Capitains. We are also building this new system in order to allow multiple citation system.
 
 The only required set of nodes in Capitains 2.3 guidelines is a refsDecl with `n="capitains"` and `xml:base` set with the ID of your text. this will allow in the future for multi identifier/citation system.
- 
+
  The previous system of cRefPattern is unchanged except :
 1. order does not matter anymore : the level of the refsDecl is declared in `@corresp`.
-2. the `matchPattern` will be compiled as regex and will matter, unlike before. 
+2. the `matchPattern` will be compiled as regex and will matter, unlike before.
 	- They must be unique.
  	- Dot can't match it all.
- 	- The number of dot should be equal to the level - 1 : level two muse have at least one dot.
- 
- The second point means that ultimately, you could have different node matching system depending on some things, eg. l1 could match a line (`(l\d+)`) while p1 a paragraph (`(p\d+)`). 
- 
+ 	- The number of dot should be equal to the level - 1 : level two must have at least one dot.
+
+ The second point means that ultimately, you could have different node matching system depending on some things, eg. l1 could match a line (`(l\d+)`) while p1 a paragraph (`(p\d+)`).
+
  The use of multiple match pattern for the same level will mean that it will be most likely less performant but we need to make it possible.
- 
+
  Example :
- 
+
  ```xml
 <refsDecl n="capitains" xml:base="urn:cts:latinLit:phi1294.phi002.perseus-lat2">
 <cRefPattern corresp="3" n="line"

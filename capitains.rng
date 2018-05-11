@@ -188,7 +188,7 @@
   </define>
   <define name="dc.contributor">
     <element name="dc:contributor">
-      <a:documentation xml:lang="eng"> This holds contributor informations according to the
+      <a:documentation xml:lang="eng"> This holds contributor information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -198,7 +198,7 @@
   </define>
   <define name="dc.coverage">
     <element name="dc:coverage">
-      <a:documentation xml:lang="eng"> This holds coverage informations according to the
+      <a:documentation xml:lang="eng"> This holds coverage information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -208,7 +208,7 @@
   </define>
   <define name="dc.creator">
     <element name="dc:creator">
-      <a:documentation xml:lang="eng"> This holds creator informations according to the
+      <a:documentation xml:lang="eng"> This holds creator information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -218,7 +218,7 @@
   </define>
   <define name="dc.date">
     <element name="dc:date">
-      <a:documentation xml:lang="eng"> This holds date informations according to the Dublin
+      <a:documentation xml:lang="eng"> This holds date information according to the Dublin
         Core Elements ontology </a:documentation>
       <choice>
         <data type="date"/>
@@ -229,7 +229,7 @@
   </define>
   <define name="dc.format">
     <element name="dc:format">
-      <a:documentation xml:lang="eng"> This holds format informations according to the
+      <a:documentation xml:lang="eng"> This holds format information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -239,7 +239,7 @@
   </define>
   <define name="dc.identifier">
     <element name="dc:identifier">
-      <a:documentation xml:lang="eng"> This holds identifier informations according to the
+      <a:documentation xml:lang="eng"> This holds identifier information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -249,7 +249,7 @@
   </define>
   <define name="dc.publisher">
     <element name="dc:publisher">
-      <a:documentation xml:lang="eng"> This holds publisher informations according to the
+      <a:documentation xml:lang="eng"> This holds publisher information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -259,7 +259,7 @@
   </define>
   <define name="dc.relation">
     <element name="dc:relation">
-      <a:documentation xml:lang="eng"> This holds relation informations according to the
+      <a:documentation xml:lang="eng"> This holds relation information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -269,7 +269,7 @@
   </define>
   <define name="dc.rights">
     <element name="dc:rights">
-      <a:documentation xml:lang="eng"> This holds rights informations according to the
+      <a:documentation xml:lang="eng"> This holds rights information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -279,7 +279,7 @@
   </define>
   <define name="dc.source">
     <element name="dc:source">
-      <a:documentation xml:lang="eng"> This holds hold source informations according to the
+      <a:documentation xml:lang="eng"> This holds hold source information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>
@@ -289,7 +289,7 @@
   </define>
   <define name="dc.subject">
     <element name="dc:subject">
-      <a:documentation xml:lang="eng"> This holds hold subject informations according to the
+      <a:documentation xml:lang="eng"> This holds hold subject information according to the
         Dublin Core Elements ontology </a:documentation>
       <choice>
         <data type="anyURI"/>

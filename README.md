@@ -1,4 +1,4 @@
-Capitains Guidelines Draft 2.3
+Capitains Guidelines Draft 3.0
 ===
 
 *This version of the guidelines is a draft. This will import new ways to express collections metadata and citation systems without depending on CTS. They will not replace older guidelines but we would highly recommend to migrate to these new ones.*

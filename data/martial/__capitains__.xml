@@ -2,20 +2,20 @@
 <collection
   xmlns="http://purl.org/ns/capitains"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
-  xmlns:cts="http://chs.harvard.edu/xmlns/cts">
+  xmlns:cts="http://chs.harvard.edu/xmlns/cts"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/">
   <identifier>urn:cts:latinLit:phi1294</identifier>
   <dc:title xml:lang="eng">Martial</dc:title>
   <dc:description xml:lang="eng">Latin Author</dc:description>
   <dc:type>cts:textgroup</dc:type>
   <dc:type>http://dbpedia.org/ontology/Person</dc:type>
+  <dc:date></dc:date>
   <!-- And any other properties from there. The more the merrier -->
   <members>
-    <collection local-path="./epigrammata/__capitains__.xml">
-      <!-- l’ordre des identifier compte ? -->
-      <identifier>urn:cts:latinLit:phi1294.phi002"</identifier> 
-    </collection>
-    <collection local-path="./de_spectaculis/__capitains__.xml">
-      <identifier>urn:cts:latinLit:phi1294.phi001</identifier>
-    </collection>
+    <collection path="./epigrammata/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi002"/>
+    <collection path="./de_spectaculis/__capitains__.xml" identifier="urn:cts:latinLit:phi1294.phi001" />
   </members>
+  <structured-metadata>
+    <foaf:name>Martial</foaf:name>
+  </structured-metadata>
 </collection>

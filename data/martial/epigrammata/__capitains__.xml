@@ -12,8 +12,7 @@
   <dc:type>http://dbpedia.org/ontology/Book</dc:type>
   <!-- And any other properties from there. The more the merrier -->
   <members>
-    <collection readable="true">
-      <local-path>./phi1294.phi002.perseus-lat2.xml</local-path>
+    <collection readable="true" local-path="./phi1294.phi002.perseus-lat2.xml">
       <identifier>urn:cts:latinLit:phi1294.phi002.perseus-lat2</identifier>
       <parent>urn:cts:latinLit:phi1294.phi002</parent>
       <dc:title xml:lang="eng">Epigrammata</dc:title>

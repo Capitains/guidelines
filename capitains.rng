@@ -329,6 +329,9 @@
               <nsName ns="http://purl.org/ns/capitains"/>
             </except>
           </anyName>
+          <optional>
+            <ref name="lang-att"/>
+          </optional>
           <text/>
         </element>
       </zeroOrMore>

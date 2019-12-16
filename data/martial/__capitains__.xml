@@ -1,6 +1,6 @@
 <?xml-model href="../../capitains.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <collection
-  xmlns="http://purl.org/ns/capitains"
+  xmlns="http://purl.org/capitains/ns/1.0#"
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:cts="http://chs.harvard.edu/xmlns/cts"
   xmlns:foaf="http://xmlns.com/foaf/0.1/">

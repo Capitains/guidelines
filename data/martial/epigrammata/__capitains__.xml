@@ -1,6 +1,6 @@
 <?xml-model href="../../../capitains.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <collection
-  xmlns="http://purl.org/ns/capitains"
+  xmlns="http://purl.org/capitains/ns/1.0#"
   xmlns:owl="http://www.w3.org/2002/07/owl#" 
   xmlns:dc="http://purl.org/dc/elements/1.1/"
   xmlns:cts="http://chs.harvard.edu/xmlns/cts">
@@ -12,7 +12,7 @@
   <dc:type>http://dbpedia.org/ontology/Book</dc:type>
   <!-- And any other properties from there. The more the merrier -->
   <members>
-    <collection readable="true" local-path="./phi1294.phi002.perseus-lat2.xml">
+    <collection readable="true" path="./phi1294.phi002.perseus-lat2.xml">
       <identifier>urn:cts:latinLit:phi1294.phi002.perseus-lat2</identifier>
       <parent>urn:cts:latinLit:phi1294.phi002</parent>
       <dc:title xml:lang="eng">Epigrammata</dc:title>
